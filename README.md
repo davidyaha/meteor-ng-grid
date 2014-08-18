@@ -1,5 +1,5 @@
-meteor-angular-xeditable
-========================
+meteor-ng-grid
+==============
 
 ##Overview
 
