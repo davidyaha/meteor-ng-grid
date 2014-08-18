@@ -1,0 +1,16 @@
+{
+  "name": "ng-grid",
+  "description": "ng-grid - Angular Data Grid written in AngularJS and jQuery by the AngularUI Team",
+  "homepage": "https://github.com/davidyaha/meteor-ng-grid",
+  "author": "David Yahalomi <davidyaha@gmail.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/davidyaha/meteor-ng-grid.git",
+  "packages": {
+      "bower": {
+          "version": "0.1.10"
+      }
+  },
+    "bower":{
+        "ng-grid": "2.0.12"
+    }
+}
