@@ -1,6 +1,7 @@
 meteor-ng-grid
 ==============
 
+
 ##Overview
 
 This is package for meteor that wraps the ng-grid bower package.
