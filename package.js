@@ -18,11 +18,13 @@ Package.on_use(function (api) {
         api.use('ngMeteor', 'client');
     }
     
-
-    // Install bower components.
-    api.add_files('smart.json', 'client');
-
-    // Client files.
-    api.add_files('init.js', 'client');
+    // Exports the ngMeteorGrid options object
+	api.export('ngMeteorGrid', 'client');
+	
+	// Files to load in Client only.
+	api.add_files(['smart.json', // Install bower components - ngGrid
+                   'options.js', // Options object declaretion
+                   'init.js'], // Addition of ngGrid to ngMeteor 
+                  'client');
     
 });
