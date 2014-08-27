@@ -3,7 +3,7 @@ ngMeteorGrid = {
     _.forEach(options.columnDefs, function (column, index, columnDefs) {
 
       columnDefs[index] = _.extend ({
-        cellTemplate: '<div><div class="ngCellText">[[row.getProperty(col.field)]]</div></div>',
+        cellTemplate: '<div><div class="ngCellText">[[COL_FIELD]]</div></div>',
         headerCellTemplate: '<div class="ngHeaderSortColumn [[col.headerClass]]" ng-style="{cursor: col.cursor}" ng-class="{ ngSorted: !noSortVisible }">' +
           '<div ng-click="col.sort($event)" ng-class="\'colt\' + col.index" class="ngHeaderText">[[col.displayName]]</div>' +
           '<div class="ngSortButtonDown" ng-show="col.showSortButtonDown()"></div>' +
