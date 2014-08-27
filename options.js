@@ -16,8 +16,5 @@ ngMeteorGrid = {
     return _.extend(ngMeteorGrid.templates, options);
   },
   templates: {
-    aggregateTemplate: '<div ng-click="row.toggleExpand()" ng-style="{\'left\': row.offsetleft}" class="ngAggregate"><span class="ngAggregateText">[[row.label CUSTOM_FILTERS]] ([[row.totalChildren()]] [[AggItemsLabel]])</span><div class="[[row.aggClass()]]"></div></div>',
-    rowTemplate: '<div ng-style="{ \'cursor\': row.cursor }" ng-repeat="col in renderedColumns" ng-class="col.colIndex()" class="ngCell [[col.cellClass]]"><div class="ngVerticalBar" ng-style="{height: rowHeight}" ng-class="{ ngVerticalBarVisible: !$last }">&nbsp;</div><div ng-cell></div></div>',
-    headerRowTemplate: '<div ng-style="{ height: col.headerRowHeight }" ng-repeat="col in renderedColumns" ng-class="col.colIndex()" class="ngHeaderCell" ng-header-cell></div>'
   }
 };
