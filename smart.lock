@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "ng-grid": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "ng-grid": {
+        "path": "."
+      }
+    }
+  }
+}
