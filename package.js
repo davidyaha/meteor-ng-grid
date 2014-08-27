@@ -10,7 +10,7 @@ function packageExists(pkgname) {
 }
 
 Package.on_use(function (api) {
-    api.use('bower', 'client');
+//    api.use('bower', 'client');
     
     if (packageExists('angularite')) {
         api.use('angularite', 'client');
@@ -19,12 +19,19 @@ Package.on_use(function (api) {
     }
     
     // Exports the ngMeteorGrid options object
-	api.export('ngMeteorGrid', 'client');
+    api.export('ngMeteorGrid', 'client');
 	
-	// Files to load in Client only.
-	api.add_files(['smart.json', // Install bower components - ngGrid
+    // Files to load in Client only.
+    api.add_files([
+		   'lib/ui-grid-unstable.js',
+		   'lib/ui-grid-unstable.css',
+	  	   'lib/ui-grid.eot',
+		   'lib/ui-grid.svg',
+		   'lib/ui-grid.ttf',
+		   'lib/ui-grid.woff',
+		   'smart.json', // Install bower components - ngGrid
                    'options.js', // Options object declaretion
                    'init.js'], // Addition of ngGrid to ngMeteor 
-                  'client');
+                   'client');
     
 });
