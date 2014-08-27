@@ -2,7 +2,7 @@ ngMeteorGrid = {
   fixTemplates: function (options) {
     _.forEach(options.columnDefs, function (column, index, columnDefs) {
 
-      columnDefs[index] = _.extend ({
+      columnDefs[index] = _.extend({
         cellTemplate: '<div><span class="ui-grid-cell-contents">[[COL_FIELD]]</span></div>',
         headerCellTemplate: '<div class="ui-grid-top-panel ngHeaderSortColumn [[col.headerClass]]" ng-style="{cursor: col.cursor}" ng-class="{ ngSorted: !noSortVisible }">' +
           '<div ng-click="col.sort($event)" ng-class="\'colt\' + col.index" class="ngHeaderText">[[col.displayName]]</div>' +
@@ -16,5 +16,6 @@ ngMeteorGrid = {
     return _.extend(ngMeteorGrid.templates, options);
   },
   templates: {
+    // You can add more templates here
   }
 };
