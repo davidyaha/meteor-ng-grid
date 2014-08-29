@@ -9,8 +9,6 @@ This utilizes bower for getting the mentioned package so you should first instal
 
 ##Installing
 ```
-mrt add bower;
-mrt add ngMeteor; // Could be spared I think..
 mrt add ng-grid;
 ```
 
