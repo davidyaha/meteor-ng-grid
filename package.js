@@ -10,13 +10,8 @@ function packageExists(pkgname) {
 }
 
 Package.on_use(function (api) {
-//    api.use('bower', 'client');
-    
-    if (packageExists('angularite')) {
-        api.use('angularite', 'client');
-    } else if (packageExists('ngMeteor')) {
-        api.use('ngMeteor', 'client');
-    }
+
+    api.use('urigo:ngmeteor@0.2.0', 'client');
     
     // Exports the ngMeteorGrid options object
     api.export('ngMeteorGrid', 'client');
